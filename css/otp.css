@@ -1,0 +1,105 @@
+
+.verify-wrapper {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f8fafc;
+}
+
+.verify-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.verify-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.verify-card h4 {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.verify-description {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.verify-card .form-label {
+    display: block;
+    text-align: left;
+    color: #334155;
+}
+
+.otp-input {
+    height: 60px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 14px;
+    padding-left: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+.otp-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.verify-card .form-text {
+    text-align: left;
+    color: #94a3b8;
+}
+
+.verify-btn {
+    padding: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.resend-text {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.resend-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.resend-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .verify-card {
+        padding: 25px 20px;
+    }
+}

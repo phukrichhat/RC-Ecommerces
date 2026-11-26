@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Bag | RC STORES</title>
+
+        <link rel="shortcut icon" href="../images/icons-store.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bag.css">
+
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <header class="navbar-main position-sticky top-0 z-3 p-0">
+
+            <!-- Navbar Top -->
+            <div class="nav-top w-100">
+                <div
+                    class="container tag-header-nav pt-2 pb-2 d-flex d-lg-flex justify-content-lg-between align-content-lg-center justify-content-center">
+                    <p class="m-0 p-0 text-white fw-medium d-lg-block d-none">Free standard delivery on orders over $75</p>
+                    <p class="m-0 p-0 text-white fw-medium">Spring edit: Up to 30% off select styles <span
+                            style="color: greenyellow;">Shop Now</span></p>
+                    <p class="m-0 p-0 text-white fw-medium d-lg-block d-none">Help & Support</p>
+                </div>
+            </div>
+
+            <!-- Navbar-Bottom -->
+            <div class="border-bottom bg-white">
+                <div class="nav-bottom  container d-flex justify-content-between">
+                    <!-- Logo and Search Box -->
+                    <div class="logo-search-box d-flex align-items-center gap-lg-5 gap-3 py-lg-4 py-3">
+
+                        <!-- Toggle Button -->
+                        <div class="d-lg-none">
+                            <button class="border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#sidebar" aria-controls="sidebar">
+                                <i class="ri-menu-line fs-5"></i>
+                            </button>
+                        </div>
+
+                        <!-- Logo Store -->
+                        <a href="/index.html"
+                            class="logo-store d-flex align-items-center gap-2 text-decoration-none text-success">
+                            <div class="box-name fw-medium bg-success text-white p-lg-2 p-1 rounded-circle">R C</div>
+                            <div class="name-store fw-medium">
+                                RC STORES
+                            </div>
+                        </a>
+
+                        <!-- Search Box -->
+                        <div class="search-box d-lg-block d-none position-relative">
+                            <input class="form-control px-5 shadow-none" type="search"
+                                placeholder="Search over 10,000 products">
+                            <i
+                                class="ri-search-2-line position-absolute translate-middle-x translate-middle-y top-50 px-3"></i>
+                            <div class="btn-search">
+                                <button
+                                    class="position-absolute top-50 translate-middle-x translate-middle-y mx-1 rounded-2 py-1 px-4 border-0  end-0 text-white">Search</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Icon:  Account, Whishlist, Bag -->
+                    <div class="icons d-flex gap-3 align-items-center">
+                        <a href="/page/login.html"
+                            class="account text-decoration-none text-black d-lg-flex  d-none flex-column align-items-center">
+                            <i class="ri-user-line fs-5"></i>
+                            <div class="icon-footer fst-italic">Account</div>
+                        </a>
+                        <a href="/page/wishlist.html"
+                            class="wishlist text-decoration-none text-black d-flex flex-column align-items-center">
+                            <i class="ri-heart-line fs-5"></i>
+                            <div class="icon-footer  d-lg-block d-none fst-italic">Wishlist</div>
+                        </a>
+                        <a href="/page/bag.html"
+                            class="bag-cart text-decoration-none text-black d-flex flex-column align-items-center">
+                            <i class="ri-shopping-cart-line fs-5"></i>
+                            <div class="icon-footer d-lg-block d-none fst-italic">Bag</div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- Navigation -->
+            <nav class="border-top border-bottom bg-white">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-center gap-4 py-3 d-none d-md-flex">
+                        <a href="../index.html" class="text-dark text-decoration-none small">Home</a>
+                        <a href="/page/product.html" class="text-dark text-decoration-none small">Shop</a>
+                        <a href="/page/about.html" class="text-dark text-decoration-none small">About Us</a>
+                        <a href="/page/contact.html" class="text-dark text-decoration-none small">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+            <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                <!-- Header -->
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="sidebarLabel">
+                        RC Stores
+                    </h5>
+
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="offcanvas-body">
+                    <nav class="nav flex-column gap-3">
+                        <a href="/index.html" class="nav-link active">Home</a>
+                        <a href="/page/product.html" class="nav-link text-black">Products</a>
+                        <a href="/page/about.html" class="nav-link text-black">About</a>
+                        <a href="/page/contact.html" class="nav-link text-black">Contact</a>
+                        <a href="/page/wishlist.html" class="nav-link text-black">Wishlist</a>
+                        <a href="/page/bag.html" class="nav-link text-black">Bag</a>
+                    </nav>
+                </div>
+
+                <!-- Footer -->
+
+                <div class="nav-footer  py-3 d-flex justify-content-center align-items-center">
+                    ©2026 PHUK RICHHAT. All rights reserved.
+                </div>
+
+            </div>
+
+
+
+        </header>
+        <!-- Shopping Bag -->
+        <main class="bag-section">
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <div class="mb-4">
+                    <small class="text-muted">
+                        <a href="../index.html" class="text-decoration-none text-muted">Home</a>
+                        <span class="mx-2">/</span>
+                        <span class="text-success">Shopping Bag</span>
+                    </small>
+                </div>
+
+                <!-- Title -->
+                <div class="mb-4">
+                    <h1 class="bag-title mb-1">Shopping Bag</h1>
+                    <p class="bag-subtitle">Review your selected products before checkout.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Bag Items -->
+                    <div class="col-lg-8">
+
+                        <div class="bag-header d-none d-md-flex">
+                            <div class="flex-grow-1">Product</div>
+                            <div style="width:120px;">Price</div>
+                            <div style="width:130px;">Quantity</div>
+                            <div style="width:90px;" class="text-end">Total</div>
+                        </div>
+
+                        <!-- Product 1 -->
+                        <div class="bag-item">
+
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+                                    alt="Red sneakers">
+                            </div>
+
+                            <div class="flex-grow-1 product-info">
+                                <a href="product.html" class="product-name">Premium Running Sneakers</a>
+                                <p>Color: Red / Size: 42</p>
+                                <div class="d-md-none product-price">$59.00</div>
+
+                                <div class="d-flex align-items-center gap-3 mt-2">
+                                    <div class="quantity-box">
+                                        <button type="button">−</button>
+                                        <span>1</span>
+                                        <button type="button">+</button>
+                                    </div>
+                                    <button type="button" class="remove-btn">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block" style="width:120px;">
+                                <span class="product-price">$59.00</span>
+                            </div>
+
+                            <div class="d-none d-md-block" style="width:130px;">
+                                <div class="quantity-box">
+                                    <button type="button">−</button>
+                                    <span>1</span>
+                                    <button type="button">+</button>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block text-end" style="width:90px;">
+                                <span class="product-price">$59.00</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="bag-item">
+
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+                                    alt="Classic wrist watch">
+                            </div>
+
+                            <div class="flex-grow-1 product-info">
+                                <a href="product.html" class="product-name">Classic Minimalist Watch</a>
+                                <p>Color: Black / Style: Modern</p>
+                                <div class="d-md-none product-price">$85.00</div>
+
+                                <div class="d-flex align-items-center gap-3 mt-2">
+                                    <div class="quantity-box">
+                                        <button type="button">−</button>
+                                        <span>1</span>
+                                        <button type="button">+</button>
+                                    </div>
+                                    <button type="button" class="remove-btn">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block" style="width:120px;">
+                                <span class="product-price">$85.00</span>
+                            </div>
+
+                            <div class="d-none d-md-block" style="width:130px;">
+                                <div class="quantity-box">
+                                    <button type="button">−</button>
+                                    <span>1</span>
+                                    <button type="button">+</button>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block text-end" style="width:90px;">
+                                <span class="product-price">$85.00</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Continue Shopping -->
+                        <div class="mt-4">
+                            <a href="product.html" class="continue-btn">
+                                <i class="ri-arrow-left-line me-1"></i>
+                                Continue Shopping
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="col-lg-4">
+
+                        <div class="summary-card">
+
+                            <h5 class="summary-title">Order Summary</h5>
+
+                            <div class="summary-row">
+                                <span>Subtotal (2 items)</span>
+                                <span class="fw-bold text-dark">$144.00</span>
+                            </div>
+
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span class="text-success fw-bold">Free</span>
+                            </div>
+
+                            <div class="summary-row">
+                                <span>Discount</span>
+                                <span>$0.00</span>
+                            </div>
+
+                            <!-- Promo Code -->
+                            <div class="mt-4">
+                                <label class="form-label small fw-bold">Promo Code</label>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control promo-input" placeholder="Enter promo code">
+                                    <button class="promo-btn" type="button">Apply</button>
+                                </div>
+                            </div>
+
+                            <!-- Total -->
+                            <div class="summary-row summary-total">
+                                <span>Total</span>
+                                <span>$144.00</span>
+                            </div>
+
+                            <a href="checkout.html" class="checkout-btn">
+                                Proceed to Checkout
+                                <i class="ri-arrow-right-line ms-2"></i>
+                            </a>
+
+                            <p class="secure-text">
+                                <i class="ri-shield-check-line me-1"></i>
+                                Secure checkout
+                            </p>
+
+                            <div class="delivery-note">
+                                <i class="ri-truck-line me-2"></i>
+                                Enjoy free shipping on orders over $75.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer text-white">
+            <div class="container py-5">
+
+                <div class="row g-4">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="bg-success text-white rounded-circle p-2 fw-bold">R C</div>
+                            <h5 class="mb-0 fw-bold">RC STORES</h5>
+                        </div>
+
+                        <p class="text-white-50 small">
+                            Discover quality products and everyday essentials
+                            with a shopping experience you can trust.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="fw-bold mb-3">Shop</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="product.html" class="text-white-50 text-decoration-none">All
+                                    Products</a></li>
+                            <li class="mb-2"><a href="product.html" class="text-white-50 text-decoration-none">New
+                                    Arrivals</a></li>
+                            <li class="mb-2"><a href="wishlist.html" class="text-white-50 text-decoration-none">Wishlist</a>
+                            </li>
+                            <li class="mb-2"><a href="bag.html" class="text-white-50 text-decoration-none">Shopping Bag</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="fw-bold mb-3">Help & Support</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact
+                                    Us</a></li>
+                            <li class="mb-2"><a href="location.html" class="text-white-50 text-decoration-none">Store
+                                    Location</a></li>
+                            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="fw-bold mb-3">Get In Touch</h6>
+                        <p class="text-white-50 small mb-2">
+                            <i class="ri-mail-line me-2"></i> support@rcstores.com
+                        </p>
+                        <p class="text-white-50 small">
+                            <i class="ri-phone-line me-2"></i> +855 12 345 678
+                        </p>
+                    </div>
+
+                </div>
+
+                <hr class="border-secondary my-4">
+
+                <div class="text-center text-white-50 small">
+                    © 2026 RC STORES. All Rights Reserved.
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
